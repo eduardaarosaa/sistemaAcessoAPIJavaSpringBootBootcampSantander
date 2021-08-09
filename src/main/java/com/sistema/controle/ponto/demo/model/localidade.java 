@@ -1,0 +1,20 @@
+package com.demo.model;
+import lombok.*;
+import java.util.objects;
+
+@Getter
+@Setter
+@AllArgsConstructors
+@NoAllArgsConstructors
+@EqualsAndHashCode
+@Builder
+@Entity
+@Audited
+
+public class localidade(){
+    @Id;
+    private long id;
+    @ManyToOne;
+    private nivelAcesso nivelAcesso;
+    private String descricao;
+}

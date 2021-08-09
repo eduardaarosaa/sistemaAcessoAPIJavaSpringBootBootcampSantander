@@ -1,0 +1,16 @@
+package com.demo.model;
+import lombok.*;
+import java.util.objects;
+
+@Getter
+@Setter
+@AllArgsConstructors
+@NoAllArgsConstructors
+@EqualsAndHashCode
+@Builder
+@Audited
+
+public class tipoData(){
+    private long id;
+    private String descricao;
+}
